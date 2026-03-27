@@ -1,39 +1,57 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隱私權政策</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            line-height: 1.8;
-            padding: 0 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
+<html translate="no">
+	<head>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height" />
+		<meta name="google" content="notranslate">
+		<title>Home</title>
+		<link rel="icon" type="image/x-icon" href="./icon.png">
+		<link rel="stylesheet" href="CSS.css">
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+		<!-- ------------------------------------------------------------------------------------ -->
+	<body>
+		<header>
+			<div class="container3">
+				<img src="./tyl.png" class="logo"></img>
+				<div>
+					<ul class="menu">
+						<li><a href="https://tyl1618.github.io/company-privacy-policy/">首頁</a></li>
+						<li><a href="https://tyl1618.github.io/company-privacy-policy/compa.html">公司A</a></li>
+						<li><a href="https://tyl1618.github.io/company-privacy-policy/compb.html">公司B</a></li>
+						<li><a href="https://tyl1618.github.io/company-privacy-policy/compc.html">公司C</a></li>
+					</ul>
+					<script>
+						$(document).ready(function() {
+							$('.showmenu').on('click', function(e){
+								e.preventDefault();	
+								$('body').toggleClass('menu-show');
+							});
+						});
+					</script>
+					<a href="#" class="showmenu">
+						<img src="./menu.png" style="max-height: 100%; max-width: 100%; width: 30px; height: 30px; padding: 30%;"></img>
+					</a>
+				</div>
+			</div>
+		</header>
 
-<h1>隱私權政策</h1>
+		<!-- ------------------------------------------------------------------------------------ -->
+		<!-- 打印特效 -->
+		<hr align="center" width="70%" class="split"></hr>
 
-<p>歡迎您使用本網站，我們非常重視您的個人資料保護。</p>
-
-<h2>一、資料蒐集</h2>
-<p>我們可能蒐集您的基本資料，例如姓名、Email等。</p>
-
-<h2>二、資料使用</h2>
-<p>僅用於提供服務與聯繫用途。</p>
-
-<h2>三、資料保護</h2>
-<p>我們採取適當措施保護您的資料安全。</p>
-
-<h2>四、聯絡方式</h2>
-<p>如有問題請聯絡：your@email.com</p>
-
-</body>
+		<!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+		<footer>
+			<hr align="center" width="70%" class="split"></hr>
+			<div class="footer-content">
+				<div class="contact-info">
+					<p>Email: <a href="mailto:tyl161803@gmail.com" class="email-link">tyl161803@gmail.com</a></p>
+				</div>
+				<div class="copyright">
+					&copy; tyl_1.618 All rights reserved.
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
