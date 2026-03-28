@@ -1418,12 +1418,16 @@ smartphone*/
 
 
 /* ===== 白底隱私頁專用（完全隔離） ===== */
-.policy-container {
+body .policy-container {
 	background-color: #ffffff !important;
 	color: #222 !important;
-	max-width: 900px;
-	margin: 80px auto;
-	padding: 40px 30px;
+
+	max-width: 1100px !important;
+	width: 100% !important;
+
+	margin: 60px auto !important;
+	padding: 40px 40px !important;
+
 	line-height: 1.8;
 	border-radius: 12px;
 	box-shadow: 0 4px 20px rgba(0,0,0,0.08);
@@ -1481,7 +1485,8 @@ smartphone*/
 /* 手機 */
 @media (max-width: 768px) {
 	.policy-container {
-		padding: 20px 15px;
-		margin: 40px 10px;
+		width: 96%;       /* 幾乎吃滿 */
+		padding: 20px 15px;  /* 減少內縮 */
+		margin: 30px auto;
 	}
 }
