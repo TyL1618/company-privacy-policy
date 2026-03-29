@@ -139,8 +139,7 @@ canvas {
 section
 {
 	width: 30%; 
-    margin-right:auto;
-    margin-left:auto;
+    margin:auto;
 }
 
 .animated {
@@ -460,7 +459,7 @@ ol, ul {
 body .policy-container {
 	background-color: #ffffff !important;
 	color: #222 !important;
-
+	box-sizing: border-box!important;
 	max-width: 1100px !important;
 	width: 100% !important;
 
@@ -470,6 +469,10 @@ body .policy-container {
 	line-height: 1.8;
 	border-radius: 12px;
 	box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.policy-container section {
+	width: 100% !important;
 }
 
 /* 標題 */
@@ -523,11 +526,10 @@ body .policy-container {
 	text-decoration: underline;
 }
 
-/* 手機 */
 @media (max-width: 768px) {
 	.policy-container {
-		width: 96%;       /* 幾乎吃滿 */
-		padding: 20px 15px;  /* 減少內縮 */
-		margin: 30px auto;
+		width: 94%;
+		padding: 20px 12px;   /* 再窄一點更好看 */
+		margin: 20px auto;
 	}
 }
