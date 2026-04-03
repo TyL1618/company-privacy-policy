@@ -526,6 +526,20 @@ body .policy-container {
 	text-decoration: underline;
 }
 
+.company-title {
+    text-align: center;
+    font-size: 42px;        /* 字體大小 */
+    font-weight: 700;       /* 粗體 */
+    letter-spacing: 4px;    /* 字距 */
+    margin: 30px 0 10px 0;  /* 上下間距 */
+    color: #222;
+
+    /* 漸層字（高級感） */
+    background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @media (max-width: 768px) {
 	.policy-container {
 		width: 94%;
